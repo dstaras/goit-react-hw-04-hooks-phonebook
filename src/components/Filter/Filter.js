@@ -6,12 +6,7 @@ const Filter = ({ onFilter, value }) => {
     <>
       <label>
         Find contacts by name
-        <input
-          type="text"
-          name="keyword"
-          value={value}
-          onChange={(e) => onFilter(e.target.value)}
-        />
+        <input type="text" name="keyword" value={value} onChange={onFilter} />
       </label>
     </>
   );
